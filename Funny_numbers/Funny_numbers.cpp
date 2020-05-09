@@ -18,7 +18,7 @@ int main()
 		{
 			value = SValue % 10;
 			SValue /= 10;
-			sum += pow(value, value);
+			sum += static_cast<int>(pow(value, value));
 		}
 		if (start == sum)
 		{
